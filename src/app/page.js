@@ -1,8 +1,6 @@
 import Link from "next/link";
 import axios from "axios";
 
-export const revalidate = 1000;
-
 async function getBlogs() {
   try {
     const response = await axios.get(`${process.env.domain}/api/blogs`);
@@ -15,6 +13,8 @@ async function getBlogs() {
 
 export default async function Home() {
   const blogs = await getBlogs();
+
+  console.log(blogs);
 
   return (
     <div>
