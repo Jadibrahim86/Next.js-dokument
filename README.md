@@ -4,5 +4,7 @@ this is a document management application for creating, deleting and editing doc
 https://github.com/Jadibrahim86/Next.js-dokument.git
 ### install dependencies
 npm i
-#### run the app
+####
+npx prisma generate
+##### run the app
 npm run dev
